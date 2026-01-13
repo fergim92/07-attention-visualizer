@@ -37,12 +37,26 @@ pip install -r requirements.txt
 - NumPy >= 1.24.0
 - Matplotlib >= 3.7.0
 
+## Project Structure
+
+```
+07-attention-visualizer/
+├── main.py                       # Entry point
+├── attention_visualizer/
+│   ├── __init__.py              # Package exports
+│   ├── models.py                # AttentionOutput dataclass
+│   ├── transformer.py           # SimplifiedTransformer implementation
+│   └── visualizer.py            # AttentionVisualizer class
+├── requirements.txt
+└── README.md
+```
+
 ## Usage
 
 ### Quick Demo
 
 ```bash
-python attention_visualizer.py
+python main.py
 ```
 
 This generates:
